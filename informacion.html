@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Información - Aprendiendo con Dabert</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #e0f7fa 0%, #b3e5fc 100%);
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: rgba(33, 150, 243, 0.7);
+            color: #fff;
+            padding: 2em 1em;
+            text-align: center;
+            border-bottom: 3px solid #b3e5fc;
+            box-shadow: 0 2px 8px rgba(33,150,243,0.1);
+        }
+        h1 {
+            font-size: 2.5em;
+            letter-spacing: 2px;
+            text-shadow: 1px 1px 8px #81d4fa;
+            margin: 0;
+        }
+        main {
+            padding: 2em;
+            background: rgba(255,255,255,0.85);
+            margin: 2em auto;
+            max-width: 700px;
+            border-radius: 15px;
+            box-shadow: 0 4px 16px rgba(33,150,243,0.08);
+        }
+        footer {
+            background: #81d4fa;
+            color: #01579b;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            box-shadow: 0 -2px 8px rgba(33,150,243,0.08);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>principios de la programacion</h1>
+    </header>
+    <main>
+    <h2 id="saludo">Bienvenido</h2>
+    <img src="img/educacion.png" alt="Imagen educativa" style="max-width:300px; display:block; margin:20px auto; border-radius:12px;">
+    <div id="contenido-dinamico"></div>
+        <script>
+        // Mostrar el correo y la contraseña del usuario
+        const correo = localStorage.getItem('correoUsuario');
+        const password = localStorage.getItem('contraseñaUsuario');
+        if (correo) {
+            document.getElementById('saludo').textContent = 'Bienvenido, ' + correo;
+        } else {
+            document.getElementById('saludo').textContent = 'Bienvenido, invitado';
+        }
+        // Agregar contenido dinámico relacionado con la primera página
+        let contenido = `<h3>Datos ingresados en la primera página</h3>`;
+        if (correo) {
+            contenido += `<p><strong>Correo electrónico:</strong> ${correo}</p>`;
+        }
+        if (password) {
+            contenido += `<p><strong>Contraseña:</strong> ${password}</p>`;
+        }
+        contenido += `
+            <h3>Recursos destacados</h3>
+            <ul>
+                <li>Guías de estudio en PDF</li>
+                <li>Videos explicativos</li>
+                <li>Ejercicios interactivos</li>
+            </ul>
+            <img src="img/python-logo.png" alt="Logo Python" style="max-width:150px; margin:20px auto;">
+            <p>¡Explora los recursos y sigue aprendiendo con Dabert!</p>
+        `;
+        document.getElementById('contenido-dinamico').innerHTML = contenido;
+        </script>
+    </main>
+    <footer>
+        &copy; 2025 Aprendiendo con Dabert
+    </footer>
+</body>
+</html>

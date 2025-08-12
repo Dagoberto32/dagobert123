@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenida - Aprendiendo con Dabert</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <style>
+        #contenidoPrincipal {
+            display: none;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #01579b;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>¡Bienvenido al Aprendizaje con Dabert!</h1>
+    </header>
+
+    <main>
+        <!-- Formulario de ingreso oculto inicialmente -->
+        <div id="accesoContainer" style="text-align:center; margin-top: 60px;">
+            <form id="formIngreso" style="display:inline-block; background:#fff; padding:30px 24px; border-radius:12px; box-shadow:0 2px 12px #e3eaf2;">
+                <h2 style="color:#01579b; margin-bottom:18px;">Acceso al sitio</h2>
+                <label for="correo">Correo electrónico:</label><br>
+                <input type="email" id="correo" name="correo" required style="width:90%; padding:8px; margin-bottom:14px; border-radius:5px; border:1px solid #b3e5fc;"><br>
+                <label for="password">Contraseña:</label><br>
+                <input type="password" id="password" name="password" required style="width:90%; padding:8px; margin-bottom:18px; border-radius:5px; border:1px solid #b3e5fc;"><br>
+                <button type="submit">Ingresar</button>
+            </form>
+        </div>
+
+        <!-- Contenido principal oculto -->
+        <div id="contenidoPrincipal">
+            <section style="margin-bottom: 30px;">
+                <h2 style="color:#01579b; margin-bottom:10px;">Bienvenido a Aprendiendo con Dabert</h2>
+                <p>Descubre una plataforma educativa en línea pensada para facilitar el aprendizaje de manera divertida, visual y práctica. Aquí encontrarás recursos para todos los niveles y edades.</p>
+            </section>
+
+            <section style="max-width: 800px; margin: 40px auto 30px auto; padding: 20px; background: #f7fbff; border-radius: 12px; box-shadow: 0 2px 12px #e3eaf2;">
+                <h2 style="color:#01579b;">¿Tienes dificultades para resolver ejercicios?</h2>
+                <p>¡No te preocupes! Aquí encontrarás recursos y consejos útiles que te ayudarán a superar los obstáculos del aprendizaje.</p>
+
+                <h3 style="color:#0277bd;">Consejos para resolver problemas</h3>
+                <ul style="margin-bottom:20px;">
+                    <li>✅ Lee el enunciado del problema con atención.</li>
+                    <li>✅ Subraya los datos importantes y lo que se te pide.</li>
+                    <li>✅ Divide el problema en pasos pequeños y comprensibles.</li>
+                    <li>✅ No tengas miedo de equivocarte: ¡practicar es la clave!</li>
+                    <li>✅ Revisa tus respuestas y busca posibles errores.</li>
+                </ul>
+
+                <h3>Recursos útiles</h3>
+                <ul style="margin-bottom:20px;">
+                    <li><a href="https://www.khanacademy.org/" target="_blank">Khan Academy</a> - Lecciones gratuitas de matemáticas, ciencias y más.</li>
+                    <li><a href="https://es.stackoverflow.com/" target="_blank">Stack Overflow en español</a> - Ayuda con programación e informática.</li>
+                    <li><a href="https://www.youtube.com/results?search_query=programacion+desde+cero" target="_blank">Aprende programación desde cero (YouTube)</a> - Encuentra videos y cursos para comenzar en programación.</li>
+                </ul>
+
+                <h3>¿Necesitas más ayuda?</h3>
+                <p>Puedes contactarnos a través del correo <a href="mailto:soporte@dabert.com">soporte@dabert.com</a> o enviarnos tu duda desde el formulario de contacto (próximamente).</p>
+            </section>
+
+            <section style="margin-top:40px; text-align:left; max-width:600px; margin-left:auto; margin-right:auto;">
+                <h2 style="color:#01579b;">¿Qué es Aprendiendo con Dabert?</h2>
+                <p><strong>Aprendiendo con Dabert</strong> es una plataforma educativa en línea que busca facilitar el aprendizaje a través de recursos digitales interactivos, dinámicos y fáciles de entender.</p>
+                <h3>Nuestra misión</h3>
+                <p>Queremos que cada estudiante, sin importar su edad, pueda tener acceso a contenido educativo de calidad desde cualquier lugar del mundo.</p>
+                <h3 style="color:#0277bd;">¿Qué ofrecemos?</h3>
+                <ul>
+                    <li>📚 Cursos de matemáticas, lengua, ciencias y más</li>
+                    <li>🎥 Videos interactivos para reforzar el aprendizaje</li>
+                    <li>📝 Ejercicios prácticos con retroalimentación inmediata</li>
+                    <li>🏆 Reconocimientos y logros al completar temas</li>
+                </ul>
+                <h3 style="color:#0277bd;">Beneficios del aprendizaje en línea</h3>
+                <ol>
+                    <li>Estudia a tu ritmo y desde donde quieras</li>
+                    <li>Refuerza conocimientos con contenido visual y práctico</li>
+                    <li>Accede a una comunidad de estudiantes con los mismos intereses</li>
+                </ol>
+                <p style="margin-top:20px;">¡No esperes más! Inicia sesión o regístrate y comienza tu viaje de aprendizaje con Dabert.</p>
+            </section>
+
+            <p>Este sitio está dedicado a compartir recursos y consejos sobre informática y programación.</p>
+            <ul>
+                <li>Noticias y novedades</li>
+                <li>Recursos gratuitos</li>
+                <li>Ejercicios y tutoriales</li>
+            </ul>
+
+        </div>
+    </main>
+
+    <footer>
+        &copy; 2025 Aprendiendo con Dabert
+    </footer>
+
+    <script>
+        // Mostrar contenido solo si el correo es válido y hay contraseña
+        document.getElementById('formIngreso').addEventListener('submit', function(e) {
+            e.preventDefault();
+            var correo = document.getElementById('correo').value;
+            var password = document.getElementById('password').value;
+            if (!correo.includes('@')) {
+                alert('El correo electrónico debe contener "@" para ingresar.');
+            } else if (password.trim() === '') {
+                alert('Por favor ingresa una contraseña.');
+            } else {
+                document.getElementById('contenidoPrincipal').style.display = 'block';
+                document.getElementById('accesoContainer').style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
